@@ -72,6 +72,10 @@
     windowManager.bspwm.enable = true;
   };
 
+  fonts.fonts = with pkgs; [ 
+    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+  ];
+
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
@@ -110,11 +114,13 @@
       obsidian
       rclone # maybe it's good idea to delete this because of package below
       google-drive-ocamlfuse
+      telegram-desktop
 
       # development
       kate
       vscode
       android-studio
+      yakuake
       
     ];
   };
