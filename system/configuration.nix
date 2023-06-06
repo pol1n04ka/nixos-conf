@@ -156,6 +156,7 @@
     git # no comments
 
     # some programming stuff
+    nodejs_18
 
   ];
 

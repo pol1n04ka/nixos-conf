@@ -1,0 +1,3 @@
+#!/bin/sh
+
+sudo ./system/update_configuration.sh
